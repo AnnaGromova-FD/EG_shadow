@@ -1,0 +1,3 @@
+[submodule "src/eg_SFCC_FE_core"]
+	path = src/eg_SFCC_FE_core
+	url = https://github.com/TechSparq/eg_SFCC_FE_core.git

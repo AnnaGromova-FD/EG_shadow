@@ -1,0 +1,65 @@
+{
+  "plugins": ["prettier", "@typescript-eslint"],
+  "extends": [
+    "airbnb-typescript",
+    "react-app",
+    "prettier",
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/extensions": [".ts", ".tsx"],
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": false }],
+    "object-curly-newline": 0,
+    "import/no-extraneous-dependencies": 0,
+    "global-require": 0,
+    "no-unused-vars": 0,
+    "no-unused-expressions": 0,
+    "import/prefer-default-export": 0,
+    "no-nested-ternary": 0,
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/prop-types": ["off"],
+    "no-use-before-define": [
+      "error",
+      { "functions": true, "classes": true, "variables": false }
+    ], // disable the rule for variables, but enable it for functions and classes
+    "import/extensions": 0,
+    "react/require-default-props": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "args": "none"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["config"]
+      }
+    ],
+    "react/jsx-one-expression-per-line": 0,
+    "react/function-component-definition": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/destructuring-assignment": 0,
+    "max-len": ["error", { "code": 80, "ignoreUrls": true }]
+  }
+}
